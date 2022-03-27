@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: 100001
+      author: fullstack_developer
+      changes:
+        - createTable:
+            tableName: product_details
+            columns:
+              - column:
+                  name: product_id
+                  type: varchar(255)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: product_name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: product_description
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: product_price
+                  type: DOUBLE
+                  constraints:
+                    nullable: false

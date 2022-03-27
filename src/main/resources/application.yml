@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: product-service
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        show_sql: true
+  liquibase:
+    enabled: true
+    change-log: classpath:/db/changelog/db.changelog-master.yml
+  datasource:
+    url: jdbc:h2:file:~/db/productservice-db;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
+    username: admin
+    password: admin
+    driverClassName: org.h2.Driver
+    validationQuery: SELECT 1
+    testOnBorrow: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        web-allow-others: true
