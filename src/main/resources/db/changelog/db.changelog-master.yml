@@ -1,3 +1,7 @@
 databaseChangeLog:
   - include:
       file: /db/changelog/migration/100001_create_product_details_table.yml
+  - include:
+      file: /db/changelog/migration/100002_add_single_product.yml
+  - include:
+      file: /db/changelog/migration/100003_add_multiple_products.yml

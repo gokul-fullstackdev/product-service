@@ -1,0 +1,65 @@
+databaseChangeLog:
+  - changeSet:
+      id: 100001
+      author: fullstack_developer
+      changes:
+        - insert:
+            tableName: product_details
+            columns:
+              - column:
+                  name: product_id
+                  value: "PROD_1002"
+              - column:
+                  name: product_name
+                  value: "BlackBerry Evolve"
+              - column:
+                  name: product_description
+                  value: "64 GB Memory, 4 GB RAM, Black, April 2018"
+              - column:
+                  name: product_price
+                  value: 540000.0D
+        - insert:
+            tableName: product_details
+            columns:
+              - column:
+                  name: product_id
+                  value: "PROD_1003"
+              - column:
+                  name: product_name
+                  value: "Nokia Phone G21"
+              - column:
+                  name: product_description
+                  value: "64 GB Memory, 4 GB RAM, Grey, January 2022"
+              - column:
+                  name: product_price
+                  value: 600000.0D
+        - insert:
+            tableName: product_details
+            columns:
+              - column:
+                  name: product_id
+                  value: "PROD_1004"
+              - column:
+                  name: product_name
+                  value: "Apple iPhone 13 Pro"
+              - column:
+                  name: product_description
+                  value: "512 GB Memory, 16 GB RAM, Red, April 2021"
+              - column:
+                  name: product_price
+                  value: 1750000.0D
+        - insert:
+            tableName: product_details
+            columns:
+              - column:
+                  name: product_id
+                  value: "PROD_1005"
+              - column:
+                  name: product_name
+                  value: "Samsung Galaxy S10"
+              - column:
+                  name: product_description
+                  value: "256 GB Memory, 8 GB RAM, Black, June 2020"
+              - column:
+                  name: product_price
+                  value: 650000.0D
